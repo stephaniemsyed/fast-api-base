@@ -1,4 +1,10 @@
 # fast-api-base
+A basic skeleton for Rest APIs. 
+
+Uses: 
+* https://python-poetry.org/ for dependency management
+* https://fastapi.tiangolo.com/ framework
+* https://www.dynaconf.com/ for config 
 
 ## Local Dev
 1. Activate virtual env: `eval $(poetry env activate)`

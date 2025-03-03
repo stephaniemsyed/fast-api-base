@@ -12,7 +12,8 @@ dependencies = [
     "fastapi (>=0.115.11,<0.116.0)",
     "injector (>=0.22.0,<0.23.0)",
     "uvicorn (>=0.34.0,<0.35.0)",
-    "fastapi-cli (>=0.0.7,<0.0.8)"
+    "fastapi-cli (>=0.0.7,<0.0.8)",
+    "dynaconf (>=3.2.10,<4.0.0)"
 ]
 
 [tool.poetry]

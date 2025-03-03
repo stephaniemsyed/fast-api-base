@@ -3,6 +3,7 @@ from fastapi import Depends, FastAPI
 from app.dependencies import get_token_header
 from app.routers.internal import admin
 from app.routers import users, items
+from app.config import settings
 
 app = FastAPI()
 
@@ -26,4 +27,4 @@ async def root():
 
 @app.get("/healthcheck")
 async def healthcheck():
-    return {"message": "Hello Bigger Applications!"}
+    return {"message": f"Hello Bigger Applications! ({settings['message']})"}
