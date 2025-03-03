@@ -13,7 +13,8 @@ dependencies = [
     "injector (>=0.22.0,<0.23.0)",
     "uvicorn (>=0.34.0,<0.35.0)",
     "fastapi-cli (>=0.0.7,<0.0.8)",
-    "dynaconf (>=3.2.10,<4.0.0)"
+    "dynaconf (>=3.2.10,<4.0.0)",
+    "faker (>=36.1.1,<37.0.0)"
 ]
 
 [tool.poetry]
@@ -22,7 +23,15 @@ package-mode = false
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.9.9"
 mypy = "^1.15.0"
+pytest = "^8.3.5"
+httpx = "^0.28.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]

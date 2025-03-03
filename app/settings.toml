@@ -1,0 +1,18 @@
+[default]
+test_value = "test value from default"
+other_value = "other value from default"
+message = "default message"
+
+[development]
+# no test_value here
+other_value = "other value from dev"
+message = "dev message"
+
+[test]
+message = "test message"
+
+[staging]
+message = "staging message"
+
+[production]
+message = "message production"
