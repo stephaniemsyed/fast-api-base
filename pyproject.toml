@@ -14,7 +14,8 @@ dependencies = [
     "uvicorn (>=0.34.0,<0.35.0)",
     "fastapi-cli (>=0.0.7,<0.0.8)",
     "dynaconf (>=3.2.10,<4.0.0)",
-    "faker (>=36.1.1,<37.0.0)"
+    "faker (>=36.1.1,<37.0.0)",
+    "email-validator (>=2.2.0,<3.0.0)"
 ]
 
 [tool.poetry]
